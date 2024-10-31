@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 2rem 4rem 2rem;
+    border-bottom: 2px solid black;
+    background-color: #ffc017;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
