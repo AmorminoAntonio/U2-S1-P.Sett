@@ -1,142 +1,290 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: "spectral", serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 8.5rem 2rem 8.5rem;
-    border-bottom: 2.5px solid black;
-    background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem 2rem 8rem;
+  border-bottom: 2.5px solid black;
+  background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  height: 100%;
+  z-index: 1;
 }
 
 .button-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    margin-right: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-right: 3rem;
 }
 
 .button-container button {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
 }
 
-.button-container button a{
-    text-decoration: none;
-    color: black;
+.button-container button a {
+  text-decoration: none;
+  color: black;
 }
 
 .button-container button:last-of-type a {
-    background-color: black;
-    border-radius: 4rem;
-    color: white;
-    padding: 1rem 2rem 1rem 2rem;
+  background-color: black;
+  border-radius: 4rem;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
-
 .main-titleContainer {
-    display: flex;
-    position: relative;
-    border-bottom: 2px solid black;
-    background-color: #ffc017;
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid black;
+  background-color: #ffc017;
 }
 
 .sectionTitle {
-    display: flex;
-    flex-direction: column;
-    padding-top: 6rem;
-    margin-left: 4rem;
-    width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  margin-left: 4rem;
+  width: 33%;
 }
 
-.sectionTitle div button {
-    background-color: black;
-    border-radius: 4rem;
-    border: none;
-    color: white;
-    padding: 1rem 3rem 1rem 3rem;
-    font-size: 1.5rem;
-    margin-left: 4rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.sectionTitle button {
+  background-color: black;
+  border-radius: 4rem;
+  border: none;
+  color: white;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.5rem;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
 }
-
 
 .main-titleContainer h1 {
-    padding: 2rem 0 2rem 0;
-    font-size: 7rem;
-    margin-left: 4rem;
-    margin-bottom: 2rem;
+  padding: 2rem 0 2rem 0;
+  font-size: 7rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
 }
 
 .main-titleContainer p {
-    font-size: 2rem;
-    margin-left: 4rem;
+  font-size: 2rem;
+  margin-left: 4rem;
 }
 
 .main-titleContainer img {
-    position: absolute;
-    right: 0;
-    width: 43%;
+  position: absolute;
+  right: 0;
+  width: 48%;
 }
 
 .wrapper-articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 6rem;
-    gap: 3.8rem;
-    width: 85%;
-    margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6rem;
+  gap: 1rem;
+  width: 90%;
+  margin-inline: auto;
+  padding-bottom: 2rem;
 }
 
 .article-title {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 5rem;
-    margin-left: 9rem;
-    margin-bottom: -4rem;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-left: 7rem;
+  margin-bottom: -4rem;
+  width: max-content;
 }
-
 
 .box {
-    display: flex;
-    justify-content: end;
-    gap: 1rem;
-    width: 25%;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.527);
+  display: flex;
+  gap: 1rem;
+  width: 29%;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
-
 .num-box {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.2;
 }
 
 .box h3 {
-    padding: 1rem 0 0 1rem;
-    font-weight: bold;
+  font-weight: bold;
+  width: 90%;
 }
 
 .box p {
-    display: flex;
-    padding: 0 0 1rem 1rem;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
+.box p:first-of-type {
+  font-weight: bold;
+}
 
-.box img {
-    width: 5%;
-    border-radius: 50%;
+.box p:last-of-type {
+  color: grey;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 8rem;
+}
+
+.aside-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.aside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.aside-text p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: grey;
+}
+
+.aside-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.aside-img {
+  width: 35%;
+  margin-left: auto;
+}
+
+.aside-text h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aside-text h4 img {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+span {
+  color: grey;
+  background-color: rgba(219, 219, 219, 0.329);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 4rem;
+}
+
+main {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  margin-top: 2.6rem;
+  position: sticky;
+  top: 6rem;
+  height: 100%;
+  z-index: 0;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 60%;
+  align-items: center;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  padding-bottom: 2rem;
+}
+
+.footer-btn button {
+    background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  color: grey;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-links button {
+  background-color: transparent;
+  border-radius: 4px;
+  border: none;
+  color: grey;
+    font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-links button a {
+  text-decoration: none;
+  color: black;
 }
