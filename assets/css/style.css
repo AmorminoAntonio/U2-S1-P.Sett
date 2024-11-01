@@ -2,22 +2,141 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 .header-container {
     display: flex;
+    justify-content: space-between;
+    padding: 2rem 8.5rem 2rem 8.5rem;
+    border-bottom: 2.5px solid black;
+    background-color: #ffc017;
+}
+
+.button-container {
+    display: flex;
     justify-content: space-evenly;
-    padding: 4rem 2rem 4rem 2rem;
+    gap: 2rem;
+    margin-right: 2.5rem;
+}
+
+.button-container button {
+    background-color: transparent;
+    border: none;
+}
+
+.button-container button a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-container button:last-of-type a {
+    background-color: black;
+    border-radius: 4rem;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+.main-titleContainer {
+    display: flex;
+    position: relative;
     border-bottom: 2px solid black;
     background-color: #ffc017;
 }
 
-header nav ul {
+.sectionTitle {
     display: flex;
-    list-style: none;
-    gap: 0.5rem;
-    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 6rem;
+    margin-left: 4rem;
+    width: 33%;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
+.sectionTitle div button {
+    background-color: black;
+    border-radius: 4rem;
+    border: none;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.main-titleContainer h1 {
+    padding: 2rem 0 2rem 0;
+    font-size: 7rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.main-titleContainer p {
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+.main-titleContainer img {
+    position: absolute;
+    right: 0;
+    width: 43%;
+}
+
+.wrapper-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6rem;
+    gap: 3.8rem;
+    width: 85%;
+    margin-inline: auto;
+}
+
+.article-title {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 9rem;
+    margin-bottom: -4rem;
+}
+
+
+.box {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    width: 25%;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.527);
+}
+
+
+.num-box {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+.box h3 {
+    padding: 1rem 0 0 1rem;
+    font-weight: bold;
+}
+
+.box p {
+    display: flex;
+    padding: 0 0 1rem 1rem;
+    align-items: center;
+}
+
+
+.box img {
+    width: 5%;
+    border-radius: 50%;
 }
