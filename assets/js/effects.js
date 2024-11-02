@@ -11,3 +11,5 @@ window.addEventListener("scroll", () => {
         btn.style.background = "black";
     }
 });
+
+// la transition nel csss non ho voluta metterla perchè non volevo inserire pezzi di codice non pensati completamente da me
