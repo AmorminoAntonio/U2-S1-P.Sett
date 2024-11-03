@@ -44,6 +44,7 @@ h4 {
 
  .button-container button {
     background: black;
+    border: none;
     border-radius: 2rem;
     padding: 0.5rem 0rem 0.5rem 0rem;
 }
